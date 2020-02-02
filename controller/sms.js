@@ -35,7 +35,7 @@ module.exports = {
                                     options = { upsert: true, new: true, setDefaultsOnInsert: true };
                                     Codes.findOneAndUpdate({ phone }, { code, date }, options, function (err, ress) {
                                         if (err) return
-                                        request.get(`https://api.kavenegar.com/v1/32654357346F314A584567766F336474485A50626D6C38335367487867535646/verify/lookup.json?receptor=${phone}&token=${code}&template=odoo`, (errr, ress, bodyr) => {
+                                        request.get(`https://api.kavenegar.com/v1/$$$$$$$$$$$$$$/verify/lookup.json?receptor=${phone}&token=${code}&template=odoo`, (errr, ress, bodyr) => {
                                             if (errr) return res.send(errr)
                                             Smsddos.create({ phone, date }, function (errsms, ressms) {
                                                 if (errsms) return errsms;
@@ -54,7 +54,7 @@ module.exports = {
                                 options = { upsert: true, new: true, setDefaultsOnInsert: true };
                                 Codes.findOneAndUpdate({ phone }, { code, date }, options, function (err, ress) {
                                     if (err) return
-                                    request.get(`https://api.kavenegar.com/v1/32654357346F314A584567766F336474485A50626D6C38335367487867535646/verify/lookup.json?receptor=${phone}&token=${code}&template=odoo`, (errr, ress, bodyr) => {
+                                    request.get(`https://api.kavenegar.com/v1/$$$$$$$$$6/verify/lookup.json?receptor=${phone}&token=${code}&template=odoo`, (errr, ress, bodyr) => {
                                         if (errr) return res.send(errr)
                                         Smsddos.create({ phone, date }, function (errsms, ressms) {
                                             if (errsms) return errsms;
