@@ -5,7 +5,7 @@ var jwtDecode = require('jwt-decode');
 const request = require('request');
 var Kavenegar = require('kavenegar');
 var api = Kavenegar.KavenegarApi({
-    apikey: '32654357346F314A584567766F336474485A50626D6C38335367487867535646'
+    apikey: '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
 });
 function sms(phone,day,num,callback){
     console.log(day)
